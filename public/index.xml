@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hua Chen | 陈华</title>
+    <link>https://chen.fun/</link>
+    <description>Recent content on Hua Chen | 陈华</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License.</copyright><atom:link href="https://chen.fun/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://chen.fun/en/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chen.fun/en/about/</guid>
+      <description>If you focus on what you left behind, you will never be able to see what lies ahead.
+ This site  Why blogging? It’s cool. It’s personalized. To accumulate a sense of achievement.  This site is powered by Hugo and pandoc, desployed on Huawei cloud server, and supported by Upyun CDN. Part of the CSS style refers to xmin, \(\LaTeX\).css and MemE. In addition, mathematical formulae are displayed by MathJax engine.</description>
+    </item>
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://chen.fun/en/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chen.fun/en/cv/</guid>
+      <description>Personal Information Name: CHEN, Hua (陈华) Email: huachen@mails.ccnu.edu.cn Homepage: https://ichenh.com/ ORCID iD: 0000-0001-9669-1683 Research Interests Modified Gravity; Dark Energy; Dark Matter Education Background 2017 ~ 2020, Master of Science, College of Physical Science and Technology, Central China Normal University. 2012 ~ 2016, Bachelor of Science, College of Physical Science and Technology, Central China Normal University. Publications Please check inSPIRE for more details. Published H. Chen, T. Katsuragawa,</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://chen.fun/zh/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chen.fun/zh/about/</guid>
+      <description>莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。料峭春风吹酒醒，微冷，山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也</description>
+    </item>
+    
+    <item>
+      <title>简历</title>
+      <link>https://chen.fun/zh/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chen.fun/zh/cv/</guid>
+      <description>个人信息 姓名：陈华 邮箱：huachen@mails.ccnu.edu.cn 网站：https://ichenh.com/ 研究兴趣 修改引力；暗物</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+# Forked from https://github.com/yestyle/lancitou-on-hugo/blob/master/.github/workflows/main.yml
+
+name: Deploy on push events
+
+on:
+  push:
+    branches: [ main ]
+
+    jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+        fetch-depth: 0
+    - uses: webfactory/ssh-agent@v0.4.1
+      with:
+        ssh-private-key: |
+          ${{ secrets.BLOG_DEPLOY_KEY }}
+    - name: Scan public keys
+      run: |
+        ssh-keyscan ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+    - name: Deploy
+      run: |
+        rsync -av --delete public root@${{ secrets.HOST }}:${{ secrets.DIR }}

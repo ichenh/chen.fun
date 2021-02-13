@@ -19,11 +19,9 @@ body {
 }
 @media screen and (max-width:620px){
 .menu ul {
-	right: 1rem;
+	right: 1.25rem;
 }
-
-/* brand */
-.menu span {
+.brand {
   left: 1rem;
 }
 
@@ -32,13 +30,11 @@ body {
 body {
   max-width: 620px;
 }
-
 .menu ul {
 	float: right;
 	right: calc(50% - 310px - 1rem);
 }
-
-.menu span {
+.brand {
   float: left;
   left: calc(50% - 310px);
 }
@@ -59,7 +55,7 @@ body {
 	position:relative;
 	margin:0;
 }
-.menu span {
+.brand {
   position: relative;
   font-size: 36px;
   font-family: 'Fascinate', cursive;
@@ -197,32 +193,51 @@ blockquote:hover {
 /* end */
 
 /* list page */
-.list span {
-  float: right;
-}
-.list ul {
+.list {
   padding: 0;
-  margin: 0;
+}
+.list-item {
+  display: flex;
+  padding: 0.3rem 0;
+  border-bottom: dashed 1px #ddd;
+}
+.list-title {
+  margin-right: auto;
+  max-width: 60%;
+  border-bottom: none;
+}
+.list-date {
+  margin-left: auto;
+  float: right;
+  max-width: 30%;
 }
 
 /* navigation */
-.nav-prev a {
-  float: left;
+.post-nav {
+  display: flex;
+  border-top: 1px solid #eee;
   font-weight: bold;
+  padding-top: 0.5rem;
+}
+.nav-prev a, .nav-next a {
   border-bottom: none;
 }
 .nav-prev a::before {
   content: "\2190\20";
   font-size:large;
 }
-.nav-next a {
-  float: right;
-  font-weight: bold;
-  border-bottom: none;
-}
 .nav-next a::after {
   content: "\20\2192";
   font-size:large;
+}
+.nav-prev {
+  margin-right: auto;
+  max-width: 45%;
+}
+.nav-next {
+  margin-left: auto;
+  float: right;
+  max-width: 45%;
 }
 
 footer {

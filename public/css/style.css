@@ -195,6 +195,7 @@ blockquote:hover {
 /* list page */
 .list {
   padding: 0;
+  justify-content: space-between;
 }
 .list-item {
   display: flex;

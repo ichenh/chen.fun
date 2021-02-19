@@ -136,11 +136,9 @@ blockquote {
   margin: 1em 0;
   padding: 0 2em;
 }
-/*
 blockquote:hover {
   border-left: 3px solid #ddd;
 }
-*/
 
 /* only the content of the articles are allowed to be printed out */
 @media print {

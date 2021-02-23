@@ -38,6 +38,10 @@ body {
   float: left;
   left: calc(50% - 310px);
 }
+.zh, .home, .en {
+  text-align: justify;
+  text-justify: distribute;
+}
 }
 
 .menu {
@@ -68,11 +72,6 @@ body {
 }
 .menu a {
   border-bottom: none;
-}
-
-.zh, .home, .en {
-  text-align: justify;
-  text-justify: distribute;
 }
 
 .author {
@@ -159,11 +158,6 @@ blockquote:hover {
   float: left;
   padding-top: 0.3em;
 }
-/* indent in Chinese articles
-.home > p::before, .zh > main p::before {
-  content: "\2002\2002\2002\2002"
-}
-*/
 
 ::selection {
   background: #fff9c0;

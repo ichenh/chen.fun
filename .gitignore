@@ -5,3 +5,4 @@ config.toml
 themes
 data
 archetypes
+*_d.md

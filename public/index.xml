@@ -14,7 +14,7 @@
       
       <guid>https://chen.fun/en/about/</guid>
       <description>If you focus on what you left behind, you will never be able to see what lies ahead.
- This site  Why blogging? It’s cool. It’s personalized. To accumulate a sense of achievement.  This site is powered by Hugo and pandoc, desployed on Huawei cloud server, and supported by Upyun CDN. Part of the CSS style refers to xmin, \(\LaTeX\).css and MemE. In addition, mathematical formulae are displayed by MathJax engine.</description>
+ This site  Why blogging? It’s cool. It’s personalized. To accumulate a sense of achievement.  This site is powered by Hugo with default markup set as Pandoc, deployed on a Huawei cloud server, and supported by Upyun CDN. Part of the layout and CSS style use xmin, \(\LaTeX\).css, and MemE as references.</description>
     </item>
     
     <item>

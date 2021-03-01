@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chen.fun/</loc>
+    <lastmod>2021-03-01T14:50:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chen.fun/zh/2021/03/be-yourself/</loc>
+    <lastmod>2021-03-01T14:50:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chen.fun/zh/</loc>
+    <lastmod>2021-03-01T14:50:47+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chen.fun/en/about/</loc>
   </url>
   
@@ -12,10 +27,6 @@
   
   <url>
     <loc>https://chen.fun/en/cv/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chen.fun/</loc>
   </url>
   
   <url>
@@ -32,10 +43,6 @@
   
   <url>
     <loc>https://chen.fun/zh/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chen.fun/zh/</loc>
   </url>
   
   <url>

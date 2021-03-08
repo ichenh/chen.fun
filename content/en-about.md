@@ -26,5 +26,5 @@ math: true
 
 ## Revision Log
 
-- 2021-02-11 This website is officially launched on New Year's Eve.
+- 2021-02-11 This website is officially launched on Chinese New Year's Eve.
 - 2021-01-28 Register chen.fun domain name.

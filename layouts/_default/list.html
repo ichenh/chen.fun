@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+
+<!--
+{{if not .IsHome }}
+<h1>{{ .Title | markdownify }}</h1>
+{{ end }}
+-->
+
+{{ .Content }}
+
+<div>
+	{{if not .IsHome }}
+	{{ range .Pages.GroupByDate "2006" }}
+	<h2>{{ .Key }}</h2>
+	<ul class="list">
+	{{ range .Pages.GroupByDate "2006-01-02" }}
+	{{ range .Pages }}
+	<div class="list-item">
+		<a class="list-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+		<span class="list-date">{{ .Date.Format "2006-01-02" }}</span>
+	</div>
+	{{ end }}
+	{{ end }}
+	</ul>
+	{{ end }}
+	{{ end }}
+</div>
+
+{{ partial "footer.html" . }}

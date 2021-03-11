@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+
+<div class="author">
+{{ if .IsPage }}
+{{ with or (or .Params.author (index .Site.Params.author .Section)) "" }}{{ . }}{{ end }}
+{{ if .Params.date }} &sdot; {{ .Date.Format "2006-01-02" }}{{ end }}
+{{ end }}
+</div>
+
+<main>{{ .Content }}</main>
+
+<br />
+{{ if .Section }}
+<br />
+{{ if or .PrevInSection .NextInSection }}
+<nav class="post-nav">
+  {{ with .PrevInSection }}<span class="nav-prev"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>{{ end }}
+  {{ with .NextInSection }}<span class="nav-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>{{ end }}
+</nav>
+<br />
+{{ end }}
+{{ end }}
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,33 @@
+{{ if .IsHome }}
+<h1 style="visibility: hidden">{{ .Title | markdownify }}</h1>
+{{ end }}
+
+{{ $dir := (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
+<footer>
+  {{ if .Site.Params.footer.enable }}
+  &copy;
+  {{ with .Site.Params.footer.SiteDate }}{{ . }} - {{ end }}
+  {{ now.Format "2006" }}
+  {{ with .Site.Params.footer.text }}
+	{{ . | markdownify }}
+  {{ end }}
+  {{ if .IsHome }}<br />
+  {{ with .Site.Params.footer.home }}{{ . | markdownify }}{{ end }}
+  {{ else }}<br />
+  <a href='{{ .Site.Params.github }}{{ "/content/" }}{{ replace $.Path "\\" "/" }}' target="_blank" rel="noopener">
+    {{ with (index .Site.Params.edit $dir) }}{{ . }}{{ end }}
+  </a>
+  {{ with (index .Site.Params.BackToTop $dir) }} | 
+  <a href="#" target="_self">
+    {{ . }}
+  </a>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</footer>
+  <!-- math support -->
+  {{ if .Params.math }}
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {{ end }}
+</body>
+</html>

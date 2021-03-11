@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Define the directory name -->
+{{ $dir := (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
+<html lang='{{ if eq $dir "zh" }}zh-Hans{{ else }}{{ .Site.LanguageCode }}{{ end }}'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Site.Title }}">
+    {{ else }}
+    <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+    {{ end }}
+    <meta property="og:type" content="website">
+    <meta property="og:image" content='{{ "favicon.ico" | absURL }}'>
+    {{ if .Params.description }}
+    <meta name="description" content="{{ .Params.description }}">
+    {{ else }}
+    {{ with .Content | markdownify | truncate 200 }}
+    <meta name="description" content="{{ . }}">
+    {{ end }}
+    {{ end }}
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#f2f2f2">
+    <meta name="theme-color" content="#f2f2f2">
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href='{{ "/css/style.css" | relURL }}' />
+    <!-- RSS output -->
+    {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+    {{ end }}
+  </head>
+
+  <body class='{{ if .IsHome }}home{{ else }}{{ .Section }}{{ end }}'>
+    <nav class="menu">
+      <span class="brand"></span><a class="brand" href="/">{{ .Site.Params.brand }}</a></span>
+      <input type="checkbox" id="toggler">
+      <label for="toggler">
+        <div class="hamburger-container">
+            <span></span>
+            <span></span>
+        </div>
+      </label>
+    <div class="nav-items">
+      <ul>
+        {{ $currentPage := . }}        
+        {{ range (default .Site.Menus.main (index .Site.Menus $dir)) }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    </nav>
+    <br />
+    {{ if not .IsHome }}
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ end }}

@@ -1,0 +1,111 @@
+baseurl = "https://chen.fun"
+languageCode = "en"
+title = "CHEN Hua | 陈华"
+footnotereturnlinkcontents = "↩"
+hasCJKLanguage = true
+enableEmoji = true
+rssLimit = 10
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License."
+pygmentsUseClasses = true
+email = "hua@chen.fun"
+author = "CHEN Hua"
+
+[markup]
+  defaultMarkdownHandler = "pandoc"
+
+[permalinks]
+    zh = "/zh/:year/:month/:slug/"
+    en = "/en/:year/:month/:slug/"
+    phys = "/phys/:year/:month/:slug/"
+
+[[menu.main]]
+    name = "中文"
+    url = "/zh/"
+    weight = 1
+[[menu.main]]
+    name = "English"
+    url = "/en/"
+    weight = 2
+[[menu.main]]
+    name = "Physics"
+    url = "/phys/"
+    weight = 3
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 4
+
+[[menu.zh]]
+    name = "日志"
+    url = "/zh/"
+    weight = 1
+[[menu.zh]]
+    name = "关于"
+    url = "/zh/about/"
+    weight = 2
+[[menu.zh]]
+    name = "订阅"
+    url = "/zh/index.xml"
+    weight = 3
+
+[[menu.en]]
+    name = "Post"
+    url = "/en/"
+    weight = 1
+[[menu.en]]
+    name = "About"
+    url = "/en/about/"
+    weight = 2
+[[menu.en]]
+    name = "RSS"
+    url = "/en/index.xml"
+    weight = 3
+
+[[menu.phys]]
+    name = "Post"
+    url = "/phys/"
+    weight = 1
+[[menu.phys]]
+    name = "Research"
+    url = "/phys/research/"
+    weight = 2
+[[menu.phys]]
+    name = "RSS"
+    url = "/phys/index.xml"
+    weight = 3
+
+#[taxonomies]
+#    project = "projects"
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "index"
+
+[Params]
+    brand = "CHEN.fun"
+    github = "https://github.com/ichenh/chen.fun/blob/main"
+
+[Params.author]
+    zh = "陈华"
+    en = "Hua Chen"
+    phys = "Hua Chen"
+
+[Params.footer]
+    enable = true
+    SiteDate = "" # 建站年份
+    text = "CHEN, Hua" # 主要
+    home = "[闽ICP备2020019883号-3](https://beian.miit.gov.cn/) | [又拍云 CDN](https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral)" # 仅显示在首页
+
+[Params.edit]
+    zh = "编辑本文"
+    en = "Edit this page"
+    phys = "Edit this page"
+
+[Params.BackToTop]
+    zh = "回到顶部"
+    en = "Back to Top"
+    phys = "Back to Top"
+
+# front matter
+# math  Boolean

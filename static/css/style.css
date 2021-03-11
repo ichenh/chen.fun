@@ -10,49 +10,156 @@ html {
 body {
   font-size: 16px;
   font-family: 'Palatino', "Palatino Linotype", "Palatino LT STD", 'Noto Serif SC', Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  padding: 6rem 1rem;
-  line-height: 1.75em;
+  margin: 3.5rem auto;
+  line-height: 1.75rem;
   text-rendering: optimizeLegibility;
   background-color:  #fff;
   hyphens: auto;
 }
 
-@media screen and (max-width:620px){
-.menu ul {
-	right: 1.25rem;
-}
-.brand {
-  left: 1rem;
-}
-iframe {
-  width: 100%;
-  height: calc(100vw/4*3);
-}
-}
-
+/* wide viewport start */
 @media screen and (min-width:620px){
-body {
-  max-width: 620px;
-}
-.menu ul {
-	float: right;
-	right: calc(50% - 310px - 1rem);
-}
-.brand {
-  float: left;
-  left: calc(50% - 310px);
-}
-.zh, .home, .en {
-  text-align: justify;
-  text-justify: distribute;
-}
-iframe {
-  width: 100%;
-  height: 480px;
-}
-}
+  
+  body {
+    max-width: 620px;
+    padding: 0 1rem;
+  }
 
+  .brand {
+    left: calc(50% - 310px);
+  }
+  
+  #toggler {
+    display: none;
+  }
+
+  .nav-items ul {
+    margin:0;
+    position:relative;
+    float: right;
+    right: calc(50% - 310px);
+  }
+
+  .nav-items li {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 1.5rem;
+  }
+
+  /* For bilibili */
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .zh, .home, .en {
+    text-align: justify;
+    text-justify: distribute;
+  }
+}
+/* wide viewport end */
+
+/* responsive layout start */
+@media screen and (max-width:620px){
+
+  body {
+    padding: 0 1rem;
+  }
+  
+  .brand {
+    left: 1rem;
+  }
+
+  label {
+    position: relative;
+    float: right;
+    right: 1rem;
+    margin-left: 3rem;
+  }
+
+  .hamburger-container {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+  }
+
+  .hamburger-container span {
+    display: block;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+    top: 0;
+  }
+
+  .hamburger-container span:nth-child(2) {
+    height: 1px;
+    margin-top: 7px;
+  }
+
+  #toggler:checked + label .hamburger-container span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 4px;
+    transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+  }
+
+  #toggler:checked + label .hamburger-container span:nth-child(2) {
+    transform: rotate(-45deg);
+    top: -4px;
+    transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+  }
+
+  #toggler:checked + label .hamburger-container span:nth-child(3) {
+    display: none;
+    top: 0px;
+    transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+  }
+
+  .nav-items {
+    opacity: 0;
+    background:#f2f2f2;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    transform: scaleY(0);
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+    transform-origin: 50% 0;
+  }
+
+  #toggler:checked ~ .nav-items {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  .nav-items ul {
+    margin-top: 4rem;
+  }
+  .nav-items ul li {
+    font-size: 24px;
+    text-align: center;
+    line-height: 4rem;
+    list-style-type: none;
+    border-bottom: solid 1px #000;
+  }
+
+  .nav-items a {
+    padding: 1rem 40%;
+    text-align: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: calc(100vw/4*3);
+  }
+}
+/* responsive layout end */
+
+/* menu */
 .menu {
   margin: 0;
   width: 100%;
@@ -64,24 +171,24 @@ iframe {
   background:#f2f2f2;
   z-index: 3;
 }
-.menu ul {
-	position:relative;
-	margin:0;
-}
-.brand {
-  position: relative;
-  font-size: 36px;
-  font-family: 'Fascinate', cursive;
-}
-.menu li {
-  display: inline-block;
-	position: relative;
-	margin: 0;
-  padding: 0 1rem 0 1rem;
-}
+
 .menu a {
   border-bottom: none;
 }
+
+.brand {
+  position: relative;
+  float: left;
+  font-size: 36px;
+  font-family: 'Fascinate', cursive;
+  margin-right: auto;
+}
+
+#toggler {
+  display: none;
+}
+/* end */
+
 
 .author {
   margin: 0.85rem 0;
@@ -130,7 +237,7 @@ img, video {
   display: block;
 }
 
-figcaption {/* 需要 pandoc 支持，与 toc 冲突 */
+figcaption {/* nee the support of pandoc, which is conflict with hugo in-built toc */
   text-align: center;
   font-size: 85%;
 }
@@ -215,7 +322,7 @@ blockquote:hover {
   max-width: 30%;
 }
 
-/* navigation */
+/* post navigation */
 .post-nav {
   display: flex;
   border-top: 1px solid #eee;

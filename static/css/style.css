@@ -88,7 +88,7 @@ body {
 
   .hamburger-container span {
     display: block;
-    height: 1px;
+    height: 2px;
     background-color: #000;
     position: relative;
     transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
@@ -96,8 +96,8 @@ body {
   }
 
   .hamburger-container span:nth-child(2) {
-    height: 1px;
-    margin-top: 7px;
+    height: 2px;
+    margin-top: 6px;
   }
 
   #toggler:checked + label .hamburger-container span:nth-child(1) {

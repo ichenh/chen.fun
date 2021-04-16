@@ -8,7 +8,7 @@ math: true
 
 Name: CHEN, Hua (陈华)  
 Email: huachen@mails.ccnu.edu.cn  
-Homepage: [https://ichenh.com/](/)  
+Homepage: [https://www.chen.fun/](/)  
 ORCID iD: [0000-0001-9669-1683](https://orcid.org/0000-0001-9669-1683)  
 
 ## Research Interests

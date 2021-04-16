@@ -8,7 +8,8 @@ math: true
 
 姓名：陈华  
 邮箱：huachen@mails.ccnu.edu.cn  
-网站：[https://ichenh.com/](/)  
+网站：[https://www.chen.fun/](/)  
+ORCID iD: [0000-0001-9669-1683](https://orcid.org/0000-0001-9669-1683) 
 
 ## 研究兴趣
 

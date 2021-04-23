@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+
+<html lang='zh-Hans'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>科研工作流程 - CHEN Hua | 陈华</title>
+    <meta property="og:title" content="科研工作流程 - CHEN Hua | 陈华">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content='https://chen.fun/favicon.ico'>
+    
+    <meta name="description" content="Scientific research workflow for theoretical physics version 1.">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#f2f2f2">
+    <meta name="theme-color" content="#f2f2f2">
+    
+    <link rel="stylesheet" type="text/css" href='/css/style.css' />
+    
+    
+  </head>
+
+  <body class='zh'>
+    <nav class="menu">
+      <span class="brand"></span><a class="brand" href="/">CHEN.fun</a></span>
+      <input type="checkbox" id="toggler">
+      <label for="toggler">
+        <div class="hamburger-container">
+            <span></span>
+            <span></span>
+        </div>
+      </label>
+    <div class="nav-items">
+      <ul>
+                
+        
+        <li><a href="/zh/">日志</a></li>
+        
+        <li><a href="/zh/about/">关于</a></li>
+        
+        <li><a href="/zh/index.xml">订阅</a></li>
+        
+      </ul>
+    </div>
+    </nav>
+    <br />
+    
+    <h1>科研工作流程</h1>
+    
+
+
+<div class="author">
+
+陈华
+ &sdot; 2021-04-23
+
+</div>
+
+<main><p>科研中的工具太多了，在各种尝试之后，我逐渐形成了以 VS Code 为核心的工作流程。用到的软件有：<a href="https://www.zotero.org/">Zotero</a>、<a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">SumtraPDF</a>、<a href="https://www.tug.org/texlive/">TeX Live</a>（<a href="https://ctan.org/mirrors/mirmon#cn">镜像</a>）、<a href="https://www.lyx.org/Home">LyX</a>（<a href="https://mirrors.tuna.tsinghua.edu.cn/lyx/">镜像</a>）、<a href="https://code.visualstudio.com/insiders/">VS Code</a>、<a href="https://typora.io/">Typora</a>、<a href="https://www.python.org/">Python3</a>、<a href="https://slack.com/intl/zh-cn/">Slack</a>（<a href="https://github.com/thisiscam/math-with-slack">公式支持</a>）、<a href="http://goldendict.org/">GoldenDict</a>、<a href="https://apps.ankiweb.net/index.html">Anki</a>、<a href="https://github.com/zadam/trilium">Trilium Notes</a>。</p>
+<h2 id="文献">文献</h2>
+<p>做科研首先是阅读文献，因此有效地管理文献至关重要。Zotero 是一款比较轻量级的开源文献管理软件，拥有丰富的<a href="https://www.zotero.org/support/plugins">插件</a>。而且它与火狐浏览器的插件后缀 <code>.xpi</code> 是一样的，也就是说，对火狐浏览器的插件稍加修改就可以直接应用到 Zotero 中。我自己基本上只用到一个插件，即 <a href="http://zotfile.com/">ZotFile</a>，用于管理附件和自动重命名等。安装插件的方式是点击 <code>Tools - Add-ons</code>，将下载好的插件拖进去即可。Zorero 支持 WebDAV 同步数据，所以配合坚果云相当方便。由于我订阅了 Office 365，所以通过 OneDrive 来同步数据和附件。对于 OneDrive 这样不支持 WebDAV 的同步云软件，一定要在 <code>Edit - Preferences - Advanced Files and Folders</code> 中设置好附件和数据路径。此外将 <code>Tools - ZotFile Preferences - General Settings</code> 中的附件路径设置成一样的，并设置好文件夹和文件命名规则。</p>
+<p>Zotero 的每一个文献条目可以同时出现在不同的文件夹中，不算作重复。重复的条目会出现在 <code>Duplicate Items</code> 中，未分类的在 <code>Unfiled Items</code> 中，管理起来还是很方便的。至于文献的分类，我基本上分成了五类，分别是：归档、（技术）文档、已读、待读，和工作。在工作文件夹中，每一个课题再分别建立一个子文件夹。需要注意的是，如果想要删除某个条目，右键选择 <code>Move Item to Trash...</code>，若只是从某个文件夹中移除，选择 <code>Remove Item from Collection</code>。</p>
+<p>浏览器插件 <code>Zotero Connector</code> 是必须安装的，用来保存 PDF 文档。只需保持 Zotero 软件开启，点击插件，选择保存目录即可。直接点击对应的条目就可以通过默认 PDF 阅读器打开文档。我使用 SumtraPDF 这个轻量级的阅读器，它打开很快，而且拥有实用的快捷键。</p>
+<h2 id="写作">写作</h2>
+<p>无论是写论文还是做笔记，<span class="math inline">\(\LaTeX\)</span> 都是必备的，因此需要安装 TeX Live 软件发行套装。LyX 是我目前所知最强大的所见即所得软件，特别是对于数学公式的支持，值得花点时间钻研。我一般在 LyX 中做笔记，在 VS Code 中写论文，当需要输入数学公式时，直接从 LyX 中复制粘贴。VS Code 需要用到的扩展是 <code>LaTeX Workshop</code>，安装好之后，点击某一个 <code>.tex</code> 文件，该扩展就会出现在侧边栏中。相关设置参见知乎的<a href="https://zhuanlan.zhihu.com/p/38178015">教程</a>。对于一般的写作，我更多地使用 Markdown 编辑器 Typora，这个软件强大而优雅。</p>
+<h2 id="编程">编程</h2>
+<p>我以前使用 Mathematica 做科学计算，现在更多地使用 Python。安装好 Python 之后，将 pip 源设置为<a href="https://mirrors.tuna.tsinghua.edu.cn/help/pypi/">清华镜像</a>，然后安装需要的程序包，例如：<code>pip install jupyterlab numpy sympy matplotlib scipy pandas</code>。为了稳定起见，最好通过 Conda 对 Python 的程序包进行版本控制。之后在 VS Code 中安装 <code>Python</code> 和 <code>Jupyter</code> 扩展就可以工作了。VS Code 中的 Jupyter 真正做到了文学式编程，即在一个 <code>.ipynb</code> 文件中使用 Markdown 写作，并且编译多种程序语言。这是比较新的功能，目前只有 Insiders 版本的 VS Code 才支持，而且直到最近才解决了新版本的 Markdown 公式显示问题。</p>
+<p>Linux 对于 Python 的支持显然更好，有时候我需要切换到 Linux 中工作。Win 10 系统的一个黑科技就是 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/install-win10">WSL</a>，即适用于 Linux 的 Windows 子系统。如今完全不再需要安装消耗资源的虚拟机，或者只能同时运行一个的双系统了。WSL 使我们可以一边在 Win 10 系统中愉快地进行日常工作和社交，一边远程登陆 Linux 系统跑程序。这时不得不提到 VS Code 的一个大杀器，<code>Remote - WSL</code> 扩展。通过它，我们可以方便地切换到 Linux 环境下编程，而丝毫不影响 Win 10 的运行。WSL 的另一个好处是，Win 10 和 Linux 系统的文件目录可以直接互相访问和运行，真正做到了“我泥中有你，你泥中有我。”</p>
+<h2 id="科研活动">科研活动</h2>
+<p>使用 Slack 管理课题组的科研活动，或者与合作者交流；使用 Skype 或腾讯会议举行视频会议；在 VS Code 中使用 GitHub 对课题文件夹进行版本管理；使用 Outlook 收发邮件，订阅 RSS。</p>
+<h2 id="其他">其他</h2>
+<p>阅读英文文献时难免会遇到陌生词汇，网易有道词典是比较简单的查询和背诵单词的方式，而我选择另一种更自主的方法：GoldenDict 词典和 Anki 抽认卡。比较麻烦的是，GoldenDict 本身不具有词典，需要自己去下载 <code>.mdd</code> 和 <code>.mdx</code> 后缀的词典文件。Anki 是很强大的一个记忆软件，拥有丰富的<a href="https://ankiweb.net/shared/addons/">插件</a>，我只用到其中的 <a href="https://ankiweb.net/shared/info/2055492159"><code>AnkiConnect</code></a> 和 <a href="https://zhuanlan.zhihu.com/p/104513438"><code>GD2Anki</code></a>。使用流程是：点击陌生词汇按 <code>Ctrl + C + C</code> 快捷键，GoldenDict 会自动在相应的词典中查询，同时会把该词汇同步到 Anki 的记忆卡片中，通过记忆卡片和记忆曲线背单词。</p>
+<p>知识多了就需要整理，有趣的网页也需要剪藏，以免变成 404。印象笔记就是一款很好的剪藏和建立个人知识体系的软件，只是，它现在已经变成印象广告了。我目前使用的是 Trilium Notes，一款绝佳的高自由度和开源的个人知识库软件，缺点是需要一定的<a href="https://github.com/zadam/trilium/wiki">学习成本</a>。以上我所用到的大多数工具都有不菲的学习成本，但工欲善其事必先利其器，边用边学，等熟练之后，就是如臂使指了。</p>
+</main>
+
+<br />
+
+<br />
+
+<nav class="post-nav">
+  <span class="nav-prev"><a href="/zh/2021/03/coffee/">我与咖啡</a></span>
+  
+</nav>
+<br />
+
+
+
+
+
+
+<footer>
+  
+  &copy;
+  
+  2021
+  
+	CHEN, Hua
+  
+  <br />
+  <a href='https://github.com/ichenh/chen.fun/blob/main/content/zh/2021-04-23-%e7%a7%91%e7%a0%94%e5%b7%a5%e4%bd%9c%e6%b5%81%e7%a8%8b.md' target="_blank" rel="noopener">
+    编辑本文
+  </a>
+   | 
+  <a href="#" target="_self">
+    回到顶部
+  </a>
+  
+  
+  
+</footer>
+  
+  
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+</body>
+</html>

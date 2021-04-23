@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License.</copyright>
-    <lastBuildDate>Mon, 08 Mar 2021 16:54:01 +0800</lastBuildDate><atom:link href="https://chen.fun/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 14:44:22 +0800</lastBuildDate><atom:link href="https://chen.fun/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>科研工作流程</title>
+      <link>https://chen.fun/zh/2021/04/scientific-research-workflow/</link>
+      <pubDate>Fri, 23 Apr 2021 14:44:22 +0800</pubDate>
+      
+      <guid>https://chen.fun/zh/2021/04/scientific-research-workflow/</guid>
+      <description>科研中的工具太多了，在各种尝试之后，我逐渐形成了以 VS Code 为核心的工作流程。用到的软件有：Zotero、SumtraPDF、TeX Live（镜像</description>
+    </item>
+    
     <item>
       <title>我与咖啡</title>
       <link>https://chen.fun/zh/2021/03/coffee/</link>

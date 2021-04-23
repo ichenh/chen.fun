@@ -6,6 +6,10 @@
     <description>Recent content in Post on CHEN Hua | 陈华</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License.</copyright><atom:link href="https://chen.fun/en/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License.</copyright>
+    
+	<atom:link href="https://chen.fun/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

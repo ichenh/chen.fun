@@ -19,7 +19,7 @@ math: true
 - 本站由 [Hugo](https://gohugo.io/) 和 [pandoc](https://pandoc.org/) 生成，部署[华为云服务器](https://activity.huaweicloud.com/cps/recommendstore.html?fromacct=5e9a4441-a665-456a-b905-9ade780e0da0&utm_source=V1g3MDY4NTY=&utm_medium=cps&utm_campaign=201905)上，使用[又拍云 CDN](https://console.upyun.com/register/?invite=SkO_nj9ld)。网站源代码发布到 [GitHub](https://github.com/ichenh/chen.fun)，部分 CSS 样式参考自 [xmin](https://github.com/yihui/hugo-xmin)、[$\LaTeX$.css](https://latex.now.sh/)、[MemE](https://github.com/reuixiy/hugo-theme-meme) 和 [CodingStartup](https://www.bilibili.com/video/BV1Et411c7Y4)。此外，本站通过 [MathJax](https://www.mathjax.org/) 显示数学公式。
 - 本站遵循[**署名-非商业性使用-相同方式共享 4.0 国际**](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)协议。
 - 内容如有错误，欢迎点击页脚的“编辑本文”提交修改。
-- RSS 订阅：[全站](/index.xml)、[中文](/cn/index.xml)、[英文](/en/index.xml)、[物理](/phys/index.xml)。
+- RSS 订阅：[全站](/index.xml)、[中文](/zh/index.xml)、[英文](/en/index.xml)、[物理](/phys/index.xml)。
 - 暂不开启留言板。
 
 ## 本人

@@ -53,7 +53,7 @@ body {
     height: 500px;
   }
 
-  .zh, .home, .en {
+  .zh, .home {
     text-align: justify;
     text-justify: distribute;
   }
@@ -170,6 +170,7 @@ body {
 	opacity: 0.8;
   background:#f2f2f2;
   z-index: 3;
+  font-weight: bold;
 }
 
 .menu a {
@@ -269,7 +270,7 @@ blockquote:hover {
 /* end */
 
 /* make the first letter of English article occupy two lines */
-.en main p:first-child::first-letter, .phys main p:first-child::first-letter {
+.en main p:first-child::first-letter {
   font-size: 3em;
   padding: 0.1em 0.1em 0 0;
   float: left;

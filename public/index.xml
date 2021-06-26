@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hua Chen | 陈华 on CHEN Hua | 陈华</title>
+    <title>陈华 / Hua Chen</title>
     <link>https://chen.fun/</link>
-    <description>Recent content in Hua Chen | 陈华 on CHEN Hua | 陈华</description>
+    <description>Recent content on 陈华 / Hua Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License.</copyright>
@@ -50,8 +50,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chen.fun/en/about/</guid>
-      <description>If you focus on what you left behind, you will never be able to see what lies ahead.
- This site  Why blogging? It’s cool. It’s personalized. To accumulate a sense of achievement.  This site is powered by Hugo with Pandoc being the default Markdown handler, deployed on a Huawei cloud server, and supported by Upyun CDN. Part of the layout and CSS style use xmin, \(\LaTeX\).css, MemE, and CodingStartup as references.</description>
+      <description>The more you know who you are and what you want, the less you let things upset you. This site Why blogging? It’s cool. It’s personalized. To accumulate a sense of achievement. This site is powered by Hugo with Pandoc being the default Markdown handler, deployed on a Huawei cloud server, and supported by Upyun CDN. Part of the layout and CSS style use</description>
     </item>
     
     <item>

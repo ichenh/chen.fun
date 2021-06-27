@@ -24,7 +24,6 @@ math: true
 
 ## 本人
 
-- 在读博士生，研究粒子宇宙学，详情见[中文版简历](/zh/cv/)或[英文版简历](/en/cv/)。
 - 欢迎通过电子邮件 [hua@chen.fun](mailto:hua@chen.fun) 与我联系，敬请使用真实姓名。
 - 闲暇之余喜欢[拍照](https://500px.com.cn/hchen)。
 

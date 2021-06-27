@@ -20,7 +20,6 @@ math: true
 
 ## Me
 
-- Curriculum vitae: [English version](/en/cv/), [Chinese version](/zh/cv/).
 - Contact: [hua@chen.fun](mailto:hua@chen.fun), with your REAL name, please.
 - I like taking [photos](https://500px.com/p/vcg-hchen?stats_source=search&stats_medium=photo_grid&view=photos) in my spare time.
 

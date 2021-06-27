@@ -25,10 +25,6 @@ author = "CHEN, Hua"
     name = "English"
     url = "/en/"
     weight = 2
-[[menu.main]]
-    name = "RSS"
-    url = "/index.xml"
-    weight = 3
 
 [[menu.zh]]
     name = "首页"
@@ -39,13 +35,17 @@ author = "CHEN, Hua"
     url = "/zh/"
     weight = 2
 [[menu.zh]]
+    name = "简历"
+    url = "/zh/cv/"
+    weight = 3
+[[menu.zh]]
     name = "关于"
     url = "/zh/about/"
-    weight = 3
+    weight = 4
 [[menu.zh]]
     name = "订阅"
     url = "/zh/index.xml"
-    weight = 4
+    weight = 5
 
 [[menu.en]]
     name = "Home"
@@ -56,9 +56,13 @@ author = "CHEN, Hua"
     url = "/en/"
     weight = 2
 [[menu.en]]
+    name = "CV"
+    url = "/en/cv/"
+    weight = 3
+[[menu.en]]
     name = "About"
     url = "/en/about/"
-    weight = 3
+    weight = 4
 [[menu.en]]
     name = "RSS"
     url = "/en/index.xml"

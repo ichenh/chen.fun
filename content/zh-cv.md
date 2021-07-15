@@ -32,6 +32,6 @@ ORCID iD: [0000-0001-9669-1683](https://orcid.org/0000-0001-9669-1683)
 
 ## 学术报告
 
-- 陈华，*Scalaron Physics in the Early Universe: BBN and QCD Phase Transition*，2021 年重庆大学暨中国科大宇宙学青年学术研讨会，重庆大学，重庆，2021 年 4 月
+- 陈华，*Scalaron Physics in the Early Universe: BBN and QCD Phase Transition*，[2021 年重庆大学暨中国科大宇宙学青年学术研讨会](/files/cv/2021青年宇宙学会议手册（定稿）.pdf)，重庆大学，重庆，2021 年 4 月
 - 陈华，*Big Bang Nucleosynthesis Hunts Chameleon Dark Matter*，[湖北天文学会 2019 年年会暨中部地区天文学术交流](/files/cv/Annual_Meeting_of_Hubei_Astronomical_Society_2019.pdf)，九宫山，咸宁，2019 年 8 月
 - 陈华，*BBN Constraints on Chameleon Dark Mattter*，[中国物理学会引力与相对论天体物理分会2019年学术年会](http://gra2019.csp.escience.cn/dct/page/1)，贵州大学，贵阳，2019 年 7 月

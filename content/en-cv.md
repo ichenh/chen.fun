@@ -36,7 +36,7 @@ Please check [inSPIRE](https://inspirehep.net/author/profile/Hua.Chen.2) for mor
 
 - **H. Chen**, T. Katsuragawa, S. Matsuzaki,  
      ``Scalaron Physics in the Early Universe: BBN and QCD Phase Transition",  
-     2021 CQU & USTC Junior Cosmology Symposium, Chongqing University, China, April 2021.
+     [2021 CQU & USTC Junior Cosmology Symposium](/files/cv/2021青年宇宙学会议手册（定稿）.pdf), Chongqing University, China, April 2021.
 - **H. Chen**, T. Katsuragawa, S. Matsuzaki, T. Qiu,  
      ``Big Bang Nucleosynthesis Hunts Chameleon Dark Matter",  
      [Annual Meeting of Hubei Astronomical Society 2019](/files/cv/Annual_Meeting_of_Hubei_Astronomical_Society_2019.pdf), Xianning, China, August 2019
